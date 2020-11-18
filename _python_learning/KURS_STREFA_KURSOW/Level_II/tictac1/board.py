@@ -1,0 +1,62 @@
+class Board:
+    # ! metoda inicjująca klasę Board
+    def __init__(self, player):
+        self.board = [[".",".","."], [".",".","."], [".",".","."]]
+        self.player = player
+        self.win = False
+
+    # ! metoda sprawdzająca pola czy wygraliśmy
+    def check_if_win(self):
+        for x in range(0,3):
+            if self.board[x][0] == self.board[x][1] and self.board[x][1] == self.board[x][2] and (self.board[x][2] == "X" or self.board[x][2] == 0):
+                self.win == True
+                return True
+        for y in range(0,3):
+            if self.board[y][0] == self.board[y][1] and self.board[y][1] == self.board[y][2] and (self.board[y][2] == "X" or self.board[y][2] == 0):
+                self.win == True
+                return True
+        if self.board[0][0] == self.board[1][1] and self.board[1][1] == self.board[2][2] and (self.board[2][2] == "X" or self.board[2][2] == 0):
+            self.win = True
+            return True
+        if self.board[0][2] == self.board[1][1] and self.board[1][1] == self.board[2][0] and (self.board[2][0] == "X" or self.board[2][0] == 0):
+            self.win = True
+            return True
+        return False
+
+    # ! metoda sprawdzająca pola czy wygraliśmy jak nie to sprawdza czy pole jest "." to gra jest kontynuowana
+    def check_if_draw(self):
+        if not self.check_if_win():
+            for row in self.board:
+                for element in row:
+                    if element == ".":
+                        return False
+            return True
+        else:
+            return False
+
+    # ! metoda sprawdzająca pola kółka i krzyżyka
+    def show_board(self):
+        print(" 1 2 3")
+        numberRow = 1
+        for row in self.board:
+            print(numberRow, end=" ")
+            for element in row:
+                print(element, end= " ")
+            print()
+            numberRow += 1
+    def check_if_free(self, x, y):
+        return self.board[x-1][y-1] == "."
+
+    def change_player(self):
+        if self.player == "0":
+            self.player = "X"
+        else:
+            self.player = "0"
+
+    def put_to_board(self, x, y):
+        if self.check_if_free(x, y):
+            self.board[x-1][y-1] = self.player
+            self.change_player()
+
+    def get_player(self):
+        return self.player

@@ -1,0 +1,155 @@
+{
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.sideBar.location": "left",
+    "editor.renderControlCharacters": true,
+    "kite.showWelcomeNotificationOnStartup": false,
+    "python.dataScience.askForKernelRestart": false,
+    "editor.tokenColorCustomizations": {
+        "functions": "#67fd8c",
+        "[Monokai Pro (Filter Spectrum)]": {
+        "keywords": "#ff4b1e",
+        "types": "#525eff",
+        "comments": "#bdbdbd",
+        "strings": "#e0838b",
+        "variables": "#36f5db",
+        "numbers": "#eefd99",
+    },
+        "better-comments.tags": [
+            {
+                "tag": "!",
+                "color": "#FF2D00",
+                "strikethrough": false,
+                "underline": false,
+                "backgroundColor": "transparent",
+                "bold": false,
+                "italic": false
+            },
+            {
+                "tag": "?",
+                "color": "#3498DB",
+                "strikethrough": false,
+                "underline": false,
+                "backgroundColor": "transparent",
+                "bold": false,
+                "italic": false
+            },
+            {
+                "tag": "todo",
+                "color": "#FF8C00",
+                "strikethrough": false,
+                "underline": false,
+                "backgroundColor": "transparent",
+                "bold": false,
+                "italic": false
+            }
+        ],
+        "textMateRules": [
+            {
+                "scope": ["keyword.operator.arithmetic.python"],
+                "settings": { "foreground": "#ff0000" },
+            },
+            {
+                "scope": ["keyword.operator.unpacking.parameter.python"],
+                "settings": { "foreground": "#ffbb00" }
+            },
+            {
+                "scope": ["punctuation.separator.colon.python",
+                "punctuation.separator.dict.python","punctuation.section.function.begin.python"],
+                "settings": { "foreground": "#e991e2",
+                "fontStyle": "italic" }
+            },
+            {
+                "scope": ["keyword.operator.assignment.python", "keyword.operator.comparison.python"],
+                "settings": { "foreground": "#ff0000" }
+            },
+            {
+                "scope": ["variable.parameter.function.language.special.self.python", "variable.language.special.self.python"],
+                "settings": { "foreground": "#36f5db" ,
+                "fontStyle": "italic",
+                // "fontStyle": "italic underline",
+                // "fontStyle": "italic bold underline",
+                }
+            },
+            {
+                "scope": ["storage.type.class.python", "storage.type.function.python"],
+                "settings": { "foreground": "#525eff" ,
+                "fontStyle": "italic",
+                // "fontStyle": "italic underline",
+                // "fontStyle": "italic bold underline",
+                }
+            }
+        ]
+    },
+    "workbench.colorCustomizations": {
+
+
+    "terminal.foreground": "#00ffea",
+    "[Monokai Pro (Filter Spectrum)]": {
+    },
+    },
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.editorAssociations": [
+
+        {
+            "viewType": "hexEditor.hexedit",
+            "filenamePattern": "*.hex"
+        },
+        {
+            "viewType": "hexEditor.hexedit",
+            "filenamePattern": "*.ini"
+        }
+
+    ],
+    "editor.largeFileOptimizations": false,
+    "python.dataScience.interactiveWindowMode": "perFile",
+    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+    "python.languageServer": "Microsoft",
+    "go.useLanguageServer": true,
+    "better-comments.multilineComments": true,
+    "better-comments.highlightPlainText": false,
+        //Tags comments
+        // Controls if quick suggestions should show up while typing
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": false,
+            "strings": false
+        },
+
+         // Controls whether suggestions should be accepted on commit characters. For example, in JavaScript, the semi-colon (`;`) can be a commit character that accepts a suggestion and types that character.
+        "editor.acceptSuggestionOnCommitCharacter": true,
+
+        // Controls if suggestions should be accepted on 'Enter' - in addition to 'Tab'. Helps to avoid ambiguity between inserting new lines or accepting suggestions. The value 'smart' means only accept a suggestion with Enter when it makes a textual change
+        "editor.acceptSuggestionOnEnter": "on",
+
+        // Controls the delay in ms after which quick suggestions will show up.
+        "editor.quickSuggestionsDelay": 10,
+
+        // Controls if suggestions should automatically show up when typing trigger characters
+        "editor.suggestOnTriggerCharacters": true,
+
+        // Controls if pressing tab inserts the best suggestion and if tab cycles through other suggestions
+        "editor.tabCompletion": "on",
+
+        // Controls whether sorting favours words that appear close to the cursor
+        "editor.suggest.localityBonus": true,
+
+        // Controls how suggestions are pre-selected when showing the suggest list
+        "editor.suggestSelection": "first",
+
+        // Enable word based suggestions
+        "editor.wordBasedSuggestions": true,
+
+        // Enable parameter hints
+        "editor.parameterHints.enabled": true,
+        "vsintellicode.modify.editor.suggestSelection": "choseToUpdateConfiguration",
+        "python.autoComplete.extraPaths": [
+
+            "./path-to-your-code",
+            "C:/Program Files (x86)/Google/google_appengine",
+            "C:/Program Files (x86)/Google/google_appengine/lib/flask-0.12"
+        ],
+        "gitlens.views.repositories.files.layout": "list",
+        "tabnine.experimentalAutoImports": true,
+        "window.zoomLevel": -1,
+        "editor.columnSelection": false,
+}

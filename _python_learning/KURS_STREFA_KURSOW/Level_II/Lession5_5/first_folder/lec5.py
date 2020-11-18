@@ -1,0 +1,1 @@
+var1 = "Hi from Lec5"
