@@ -435,6 +435,7 @@ class Person:
 # %%
 #TODO Kółko krzyżyk klasa
 #folder tictac1 -> board.py
+#puste pole
 
 # %%
 # %%
