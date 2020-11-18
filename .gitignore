@@ -1,0 +1,6 @@
+  
+# ignore all sqlite files
+*.sqlite
+
+# ignore pycache folder
+__pycache__/
