@@ -434,9 +434,18 @@ class Person:
         print(f"Name: {self.name}, Surname: {self.surname}, Nickname: {self.nickname}")
 # %%
 #TODO Kółko krzyżyk klasa
-#folder tictac1 -> board.py
-#puste pole
-
+#folder tictac1 -> board.py, main.py
+# %% 
+#TODO Dziedziczenie
+#folder inheritance1 -> board.py, main.py
+#TODO Dziedziczenie 2
+#folder inheritance2 -> board.py, main.py
 # %%
+#TODO Metody wirtualne
+#folder virtual_methods -> board.py, main.py
 # %%
+#TODO Klasa abstrakcji - klasa z której nie możemy bądz nie chcemy tworzyć obiektów
+#folder abstract_class -> board.py, main.py
 # %%
+#TODO Dziedziczenie wielokrotne - przekaywanie czytelnie argumentów miedzy klasami
+#folder inheriance_multiple -> board.py, main.py

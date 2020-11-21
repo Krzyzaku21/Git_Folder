@@ -11,6 +11,13 @@
             "program": "${file}",
             "console": "integratedTerminal"
         },
+        {
+            "name": "Launch Chrome",
+            "request": "launch",
+            "type": "pwa-chrome",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
+        },
             //"C:\\Users\\Krzyz\\Python\\python.exe"
             //"terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
             //"terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
