@@ -449,3 +449,9 @@ class Person:
 # %%
 #TODO Dziedziczenie wielokrotne - przekaywanie czytelnie argumentów miedzy klasami
 #folder inheriance_multiple -> board.py, main.py
+# %%
+#TODO Polimorfizm - operacje w ten sam sposób na różnych typach
+#folder inheriance_multiple -> board.py, main.py
+# %%
+
+# %%
