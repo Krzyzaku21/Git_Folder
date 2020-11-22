@@ -435,7 +435,7 @@ class Person:
 # %%
 #TODO Kółko krzyżyk klasa
 #folder tictac1 -> board.py, main.py
-# %% 
+# %%
 #TODO Dziedziczenie
 #folder inheritance1 -> board.py, main.py
 #TODO Dziedziczenie 2
