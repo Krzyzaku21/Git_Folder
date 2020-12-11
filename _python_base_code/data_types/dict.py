@@ -147,3 +147,13 @@ group_2 = ["a", "b", "c", "d", "e"]
 parings = {nums : alphas for nums, alphas in zip(group_1, group_2)}
 print(parings) #{1: 'a', 2: 'b', 3: 'c', 4: 'd', 5: 'e'}
 # %%
+# How merge two dictionaries in Python 3.9
+x = {'a' : 1, 'b' : 2}
+y = {'b' : 4, 'c' : 3}
+z = {**x, **y}
+print(z) # {'a': 1, 'b': 4, 'c': 3}
+z = {**x, 'foo': 1, 'bar': 2, **y}
+print(z) # {'a': 1, 'b': 4, 'foo': 1, 'bar': 2, 'c': 3}
+v = y | x
+print(v) #{'b': 2, 'c': 3, 'a': 1}
+# %%

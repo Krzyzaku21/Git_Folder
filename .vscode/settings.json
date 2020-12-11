@@ -170,7 +170,7 @@
         },
         "notebook.kernelProviderAssociations": [
         ],
-        "python.pythonPath": "C:\\Users\\Krzyz\\Python\\python.exe",
+        "python.pythonPath": "c:\\Users\\Krzyz\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
         "jupyter.askForKernelRestart": false,
         "jupyter.interactiveWindowMode": "perFile",
 }
