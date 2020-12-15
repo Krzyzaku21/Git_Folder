@@ -140,21 +140,19 @@
         // Enable parameter hints
         "editor.parameterHints.enabled": true,
         "vsintellicode.modify.editor.suggestSelection": "choseToUpdateConfiguration",
-        "python.pythonPath": "C:\\Users\\Krzyz\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+        //"python.pythonPath": "/path/to/your/venv/bin/python",
         "python.autoComplete.extraPaths": [
-            "${workspaceRoot}/Git_Folder/",
-            "${workspaceRoot}/django/",
-            "C:/Users/Krzyz/Python",
-            "c:/Users/Krzyz/AppData/Local/Programs/Python/Python39",
-            "/usr/krzyz/python",
+            "/usr/local/bin/python3",
+            "/usr/local/bin/python",
+            "C:/Users/Krzyz/Python/python.exe",
             "C:/Program Files (x86)/Google/google_appengine",
             "C:/Program Files (x86)/Google/google_appengine/lib/flask-0.12"
         ],
         "python.autoComplete.addBrackets": true,
         "python.envFile": ".env",
-        "python.analysis.disabled": [
-            "unresolved-import"
-        ],
+        // "python.analysis.disabled": [
+        //     "unresolved-import"
+        // ],
         "tabnine.experimentalAutoImports": true,
         "window.zoomLevel": -1,
         "editor.columnSelection": false,
@@ -172,18 +170,7 @@
         },
         "notebook.kernelProviderAssociations": [
         ],
+        "python.pythonPath": "c:\\Users\\Krzyz\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
         "jupyter.askForKernelRestart": false,
         "jupyter.interactiveWindowMode": "perFile",
-        "git.enableSmartCommit": true,
-        "AREPL.pythonOptions": [
-        
-            "-u"
-        ],
-        "[python]": {
-
-            "gitlens.codeLens.symbolScopes": [
-                "!Module"
-            ]
-        },
-        "files.autoSave": "off",
 }
