@@ -1,11 +1,11 @@
 lst = []
 passwd = ["PE7UZF8UDRBi"]
-code = [["Z","2"],["8","B"],["D","0","O"]]
+code = [["Z", "2"], ["8", "B"], ["D", "0", "O"]]
 x = code[0]
 y = code[1]
 z = code[2]
 num = 0
-num2 =0
+num2 = 0
 while len(x) > num:
     for word in passwd:
         if "Z" in word:

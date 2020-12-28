@@ -3,17 +3,22 @@ class GameObject:
     class_name = ""
     desc = ""
     objects = {}
+
     def __init__(self, name):
         self.name = name
         GameObject.objects[self.class_name] = self
+
     def get_desc(self):
         return self.class_name + "\n" + self.desc
+
+
 class Goblin(GameObject):
     def __init__(self, name):
         self.class_name = "goblin"
         self.health = 3
         self._desc = "A foul creature"
         super().__init__(name)
+
     @property
     def desc(self):
         if self.health >= 3:
@@ -25,10 +30,15 @@ class Goblin(GameObject):
         elif self.health <= 0:
             health_line = "It is dead."
         return self._desc + "\n" + health_line
+
     @desc.setter
     def desc(self, value):
         self._desc = value
+
+
 goblin = Goblin("Gobbly")
+
+
 def hit(noun):
     if noun in GameObject.objects:
         thing = GameObject.objects[noun]
@@ -41,11 +51,15 @@ def hit(noun):
     else:
         msg = "There is no {} here.".format(noun)
     return msg
+
+
 def examine(noun):
     if noun in GameObject.objects:
         return GameObject.objects[noun].get_desc()
     else:
         return "There is no {} here.".format(noun)
+
+
 def get_input():
     command = input(": ").split()
     print(command)
@@ -62,8 +76,12 @@ def get_input():
         print(verb(noun_word))
     else:
         print(verb("nothing"))
+
+
 def say(noun):
     return 'You said "{}"'.format(noun)
+
+
 verb_dict = {
     "say": say,
     "examine": examine,
