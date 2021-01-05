@@ -19,3 +19,4 @@
 # SHIFT + ALT + KURSOR - Kolumnowe chwytanie kodu
 # CTRL + SHIFT + ENTER - nowa linia kodu powyżej # ! mega OP
 # SHIFT + ENTER - nowa linia kodu ponizej # ! mega OP
+# & CTRL+K+K Flexbox CSS
