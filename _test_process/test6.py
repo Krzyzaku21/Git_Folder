@@ -1,13 +1,13 @@
 # %%
-from random import randint as ran
-set_nums = set()
+def concatenate(*args):
+    word = '-'.join(args)
+    return word
 
 
-def big_lotto():
-    while len(set_nums) <= 6:
-        random_nums = int(ran(1, 49))
-        set_nums.add(random_nums)
-        print(set_nums)
+print(concatenate("I", "love", "Python", "!"))
 
 
-big_lotto()
+# %%
+
+help(re)
+# %%
