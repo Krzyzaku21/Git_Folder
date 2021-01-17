@@ -1,8 +1,8 @@
 # %%
 # ? simple while loop
 current_value = 1
-while current_value  <= 5:
-    print(current_value) #1, 2, 3, 4, 5
+while current_value <= 5:
+    print(current_value)  # 1, 2, 3, 4, 5
     current_value += 1
 # %%
 # ? choose when quit
@@ -51,23 +51,23 @@ for player in players:
 # %% while loop skończona
 i = 1
 while i <= 5:
-    print(i) #1,2,3,4,5
+    print(i)  # 1,2,3,4,5
     i = i + 1
-print("Finished") #Finished
+print("Finished")  # Finished
 # %%
 i = 0
 while True:
-  print(i) #0, 1, 2, 3, 4
-  i = i + 1
-  if i >= 5:
-    print("Breaking") #i = 5 so Breaking
-    break
-print("Finished") #Finished
+    print(i)  # 0, 1, 2, 3, 4
+    i = i + 1
+    if i >= 5:
+        print("Breaking")  # i = 5 so Breaking
+        break
+print("Finished")  # Finished
 # %%
 i = 1
-while i<=5:
+while i <= 5:
     print(i)
-    i+=1
-    if i==3:
-      print("Skipping 3")
-      continue
+    i += 1
+    if i == 3:
+        print("Skipping 3")
+        continue

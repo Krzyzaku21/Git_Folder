@@ -10,7 +10,6 @@ a = list(range(*lista))
 b = dict(x for range(lista))
 print(a)
 
-
 import random
 # a = random.randint(1,6)
 # print(a)
